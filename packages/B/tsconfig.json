@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "src/",
+    "../../.eslintrc.js",
+    "./tea.config.js",
+    "../shared/src"
+  ],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@i18n/*": ["./i18n/*"],
+      "@tea/app": ["../../node_modules/@tencent/tea-app"],
+      "@shared/*": ["../shared/src/*"]
+    },
+    "outDir": "dist"
+  }
+}

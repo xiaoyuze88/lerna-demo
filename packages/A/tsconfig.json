@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "src/",
+    "../../.eslintrc.js",
+    "./tea.config.js",
+    "../shared/src"
+  ],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+    },
+    "outDir": "dist"
+  }
+}
